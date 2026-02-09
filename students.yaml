@@ -1,0 +1,13 @@
+- name: "Pedada vamsi Krishna"
+  dob: "2000-09-08"
+  email: "sample@gmail.com"
+  mobile number: 123456789
+  addresses:
+  - flatnumber: 101
+    street: "xxx"
+    city: "xxx"
+    type: "current"
+  - flatnumber: 101
+    street: "xxx"
+    city: "xxx"
+    type: "perm"

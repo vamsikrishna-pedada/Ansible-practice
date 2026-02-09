@@ -1,0 +1,44 @@
+{
+    "students": [
+        {
+            "firstName": "Vamsi Krishna Pedada",
+            "dob": "1991-01-01",
+        
+            "addresses": [ 
+                {
+                    "type": "perm",
+                    "flatNumber": 111,
+                    "street": "xxx",
+                    "city": "xxx"
+                },
+                {
+                    "type" : "current",
+                    "flatNumber": 104,
+                    "street": "xxx",
+                    "city": "xxx"
+                }
+            ],
+            "skills": ["java", "devops", "cloud"]
+        },
+        {
+            "firstName": "Sainadh Pedada",
+            "dob": "1991-01-01",
+        
+            "addresses": [ 
+                {
+                    "type": "perm",
+                    "flatNumber": 104,
+                    "street": "xxx",
+                    "city": "xxx"
+                },
+                {
+                    "type" : "current",
+                    "flatNumber": 104,
+                    "street": "xxx",
+                    "city": "xxx"
+                }
+            ],
+            "skills": ["java", "devops", "cloud"]
+        }
+    ]
+}
