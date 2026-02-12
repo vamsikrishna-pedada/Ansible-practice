@@ -1,23 +1,21 @@
-- name: demo on data types
+- name: ansible command vs shell module
   hosts: local
   connection: local
-  vars:
-    PROGRAM: "DevSecOps with AWS" # string
-    DURATION: 140 # int/number
-    IS_LIVE: true # bool
-    DETAILS: # map/dictionary {}
-      MONTHS: 4
-      TRAINER: "Sivakumar Reddy"
-    TOPICS: # list -/[]
-    - Linux
-    - Shell
-    - Ansible
   tasks:
-  - name: print variables
+  - name: command module test
+    #ansible.builtin.command: cat /etc/passwd | grep root
+    ansible.builtin.shell: cat /etc/passwd | grep root
+    register: users_output
+
+  - name: print output
     ansible.builtin.debug:
-      msg: |
-        Program: {{ PROGRAM }}
-        Duration: {{ DURATION }}
-        Is Live?: {{ IS_LIVE }}
-        Details: {{ DETAILS }}
-        Topics: {{ TOPICS }}
+      msg: "{{ users_output }}"
+
+  - name: command module test
+    #ansible.builtin.command: cat /etc/passwd | grep root
+    ansible.builtin.shell: ls -ltr > files.txt
+    register: files_output
+
+  - name: print output of files
+    ansible.builtin.debug:
+      msg: "{{ files_output }}"
