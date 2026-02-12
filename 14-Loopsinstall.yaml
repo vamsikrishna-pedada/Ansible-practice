@@ -8,6 +8,6 @@
       msg: "{{ item }}"
       state: present
     loop:
-    - nginx
     - mysql
-    - redis
+    - nginx
+    - zip
